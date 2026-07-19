@@ -35,7 +35,7 @@ Put 2 magnets in each slot on the main body and 1 magnet per slot in the lid. </
 If everything seems fine, then fix the wheel axis to the wheel with glue. Fix the motors in place, for example with double-sided tape. It's also a good idea to fix other things like Arduino and breadboard, but it isn't required. Then solder all the parts according to the schematics. Make sure the lid fits on top and has enough force. 
 
 ### Software
-Download the Arduino files and open the wanted one. You can edit the code as wanted. Use the Arduino cable to connect the Arduino Uno with the PC and upload. For the remote-controlled code, you need to add the button codes of your remote. Check the codes in the Serial Monitor. </br>
+Download the Arduino files and open the wanted one. You can edit the code as wanted. Use the Arduino cable to connect the Arduino Uno with the PC and upload. For the remote-controlled code, you need to install the IRremote package and replace the button codes (hex values) with those of your remote. Check the codes in the Serial Monitor. </br>
 <b>Warning: The fixed path code makes the wheels rotate immediatly, so make sure they aren't touching the floor when uploading the program. </b></br>
 After uploading, disconnect from PC and connect to batteries / powerbank. To restart the code, press the reset button on the Arduino. 
 
