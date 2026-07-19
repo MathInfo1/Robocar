@@ -3,6 +3,9 @@ A simple 3D-printed cylindrical robocar, that can follow a fixed path or can be 
 
 ## What does it do?
 The robot can follow either follow a fixed path or be remote controlled. Example code including functions for a fixed path are given. There is also a code with which you can manually control the robot with the remote. It only moves if you press the arrow keys, but you can also press some buttons to make it follow a fixed path. The robot can be coded as wanted. 
+</br></br>
+Demo 1 (Fixed path): https://youtu.be/czfSZnnJx2o </br>
+Demo 2 (Remote-controlled): https://www.youtube.com/shorts/nxYcud6KOsA
 
 ## Parts required
 - 3D-printed parts
