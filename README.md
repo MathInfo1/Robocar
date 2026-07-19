@@ -41,3 +41,6 @@ After uploading, disconnect from PC and connect to batteries / powerbank. To res
 
 ### Code Changes
 You can create your own paths as you want, feel free to use my functions. My driver didn't have the PWM pins, so I just used digitalWrite, so the wheels always went in maximum speed (I could have still used analogWrite, but it wasn't as reliable as the PWM pins). If you have the PWM pins, connect them to the Arduino and you can control the wheel speed with it, allowing you to write much cooler programs! 
+
+## AI Use
+I used some AI to get decide which motors, sensors, etc. to use. I compared multiple suggestions and picked what I found best. The code was written by me, but about 1-2 times I was stuck and asked ChatGPT why it didn't work (it turned out to be a hardware issue). 
