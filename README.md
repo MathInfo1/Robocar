@@ -9,7 +9,7 @@ Demo 2 (Remote-controlled): https://www.youtube.com/shorts/nxYcud6KOsA
 
 ## Parts required
 - 3D-printed parts
-- Arduino (Uno)
+- Arduino (Uno) + cable
 - Breadboard if wanted
 - rubber or similar if wanted (to increase friction of wheels)
 - 2 TT gear motors
@@ -19,8 +19,9 @@ Demo 2 (Remote-controlled): https://www.youtube.com/shorts/nxYcud6KOsA
 - Infrared Remote and Sensor
 - Batteries (~6V and enough current supply) or Powerbank
 - Cylindrical Magnets (6x2mm)
+- Jumper wires or similar
 
-## How to build it yourself
+## Steps to reproduce
 ### Print parts
 If you want my default settings (dimensions set such that Creality CR-10 SE can print it), just download all 4 .3mf-files, slice it and print. Dimensions are 200x200x60mm. </br>
 If you want to make some adjustments, first download Robocar 1.FCStd (FreeCAD). You can adjust many things through the variables in VarSet. The wheels and wheel axis need to be edited manually as they do not use the variables. Just make sure there is enough gap to enter the wheel from the top. Then export the files, slice and print. </br>
@@ -32,3 +33,11 @@ In the back insert the ball caster and fasten it with screws. </br>
 Place the Arduino between the motors such that the cable can be inserted from the center. </br> 
 Put 2 magnets in each slot on the main body and 1 magnet per slot in the lid. </br>
 If everything seems fine, then fix the wheel axis to the wheel with glue. Fix the motors in place, for example with double-sided tape. It's also a good idea to fix other things like Arduino and breadboard, but it isn't required. Then solder all the parts according to the schematics. Make sure the lid fits on top and has enough force. 
+
+### Software
+Download the Arduino files and open the wanted one. You can edit the code as wanted. Use the Arduino cable to connect the Arduino Uno with the PC and upload. For the remote-controlled code, you need to add the button codes of your remote. Check the codes in the Serial Monitor. </br>
+<b>Warning: The fixed path code makes the wheels rotate immediatly, so make sure they aren't touching the floor when uploading the program. </b></br>
+After uploading, disconnect from PC and connect to batteries / powerbank. To restart the code, press the reset button on the Arduino. 
+
+### Code Changes
+You can create your own paths as you want, feel free to use my functions. My driver didn't have the PWM pins, so I just used digitalWrite, so the wheels always went in maximum speed (I could have still used analogWrite, but it wasn't as reliable as the PWM pins). If you have the PWM pins, connect them to the Arduino and you can control the wheel speed with it, allowing you to write much cooler programs! 
